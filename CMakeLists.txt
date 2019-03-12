@@ -14,6 +14,8 @@ function(enable_cxx_compiler_flag_if_supported flag)
     endif()
 endfunction()
 
+SET( CMAKE_BUILD_TYPE RELEASE )
+
 enable_cxx_compiler_flag_if_supported("-Wall")
 enable_cxx_compiler_flag_if_supported("-Wextra")
 enable_cxx_compiler_flag_if_supported("-pedantic")
